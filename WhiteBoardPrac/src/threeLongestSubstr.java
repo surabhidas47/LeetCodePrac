@@ -2,6 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class threeLongestSubstr {
+    //no repeated letters allowed
     class Solution {
         public int lengthOfLongestSubstring(String s) {
 
