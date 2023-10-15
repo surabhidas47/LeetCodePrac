@@ -17,11 +17,14 @@ public class fiveLongestPalSub {
 
                 int len= Math.max(len1,len2);
 
-                if(len> end -start){
+                if(len> end-start){
                     //"racecar" 3- ((7-1) /2) =
-                    start = i-((len-1)/2)
+                    start = i-((len-1)/2);
+                    end = i+(len/2);
                 }
             }
+            //substring doesn't include the end index, not inclusive
+            return s.substring(start,end+1);
 
         }
 
